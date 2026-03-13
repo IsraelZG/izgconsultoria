@@ -18,15 +18,17 @@ const HeroSection = () => {
       <div className="absolute top-1/4 -left-32 w-96 h-96 rounded-full bg-primary/5 blur-[120px]" />
       <div className="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full bg-secondary/5 blur-[120px]" />
 
-      <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
-        <img src="/logo-full.svg" alt="IZG Consultoria" className="mx-auto mb-8 h-20 w-auto sm:h-24 md:h-28" />
+      <div className="relative z-10 mx-auto max-w-6xl px-6 text-center">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
+          <img src="/logo-full.svg" alt="IZG Consultoria" className="h-24 w-auto sm:h-28 md:h-36 lg:h-44 shrink-0" />
 
-        <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
-          Inteligência Tecnológica e Financeira para o seu Negócio{" "}
-          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            escalar.
-          </span>
-        </h1>
+          <h1 className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl md:text-left">
+            Inteligência Tecnológica e Financeira para o seu Negócio{" "}
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              escalar.
+            </span>
+          </h1>
+        </div>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
           Unimos desenvolvimento de software sob medida, gestão financeira e contabilidade com um
