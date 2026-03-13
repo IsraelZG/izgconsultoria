@@ -18,8 +18,8 @@ const Navbar = () => {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
-          <img src={logoIcon} alt="IZG" className="h-8 w-auto md:hidden" />
-          <img src={logoFull} alt="IZG Assessoria e Consultoria" className="hidden md:block h-8 w-auto" />
+          <img src="/logo-icon.svg" alt="IZG" className="h-8 w-auto md:hidden" />
+          <img src="/logo-full.svg" alt="IZG Assessoria e Consultoria" className="hidden md:block h-8 w-auto" />
         </a>
 
         {/* Desktop Nav */}
