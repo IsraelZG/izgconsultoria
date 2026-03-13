@@ -11,7 +11,7 @@ const HeroSection = () => {
     offset: ["start start", "end start"],
   });
 
-  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   return (
     <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
@@ -24,8 +24,8 @@ const HeroSection = () => {
             backgroundSize: "32px 32px",
           }}
         />
-        <div className="absolute top-1/4 -left-32 w-96 h-96 rounded-full bg-primary/5 blur-[120px]" />
-        <div className="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full bg-secondary/5 blur-[120px]" />
+        <div className="absolute top-1/4 -left-32 w-[600px] h-[600px] rounded-full bg-primary/15 blur-[120px]" />
+        <div className="absolute bottom-1/4 -right-32 w-[600px] h-[600px] rounded-full bg-secondary/15 blur-[120px]" />
       </motion.div>
 
       {/* Content with fade-in on mount */}

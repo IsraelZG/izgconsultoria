@@ -48,16 +48,16 @@ const SolutionsHub = () => {
     offset: ["start end", "end start"],
   });
 
-  const bgY = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
+  const bgY = useTransform(scrollYProgress, [0, 1], ["-30%", "30%"]);
 
   return (
     <section ref={ref} id="solucoes" className="relative py-24 sm:py-32 overflow-hidden">
       {/* Parallax Background */}
       <div className="absolute inset-0 bg-[#0B1120]" />
       <motion.div className="absolute inset-0 pointer-events-none" style={{ y: bgY }}>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/[0.03] to-transparent" />
-        <div className="absolute top-1/3 -left-40 w-[600px] h-[600px] rounded-full bg-primary/5 blur-[180px]" />
-        <div className="absolute bottom-1/3 -right-40 w-[600px] h-[600px] rounded-full bg-secondary/5 blur-[180px]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/[0.08] to-transparent" />
+        <div className="absolute top-1/3 -left-40 w-[800px] h-[800px] rounded-full bg-primary/15 blur-[180px]" />
+        <div className="absolute bottom-1/3 -right-40 w-[800px] h-[800px] rounded-full bg-secondary/15 blur-[180px]" />
       </motion.div>
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
