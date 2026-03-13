@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { MessageCircle } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-const WHATSAPP_URL = "https://wa.me/5500000000000?text=Olá! Gostaria de iniciar um diagnóstico para minha empresa.";
+const WHATSAPP_URL = "https://wa.me/5547988449215?text=Olá! Gostaria de iniciar um diagnóstico para minha empresa.";
 
 const CTASection = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -30,14 +30,11 @@ const CTASection = () => {
       >
         <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl md:text-5xl">
           Pronto para transformar a eficiência da sua{" "}
-          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            empresa?
-          </span>
+          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">empresa?</span>
         </h2>
 
         <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground">
-          Fale diretamente com um especialista e descubra a arquitetura exata para o seu cenário
-          atual.
+          Fale diretamente com um especialista e descubra a arquitetura exata para o seu cenário atual.
         </p>
 
         <div className="mt-10">
