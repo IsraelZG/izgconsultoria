@@ -16,10 +16,8 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/70 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        {/* Logo */}
-        <a href="#" className="flex items-center group">
-          <img src="/logo-icon.svg" alt="IZG" className="h-10 w-auto" />
-        </a>
+        {/* Spacer for layout balance */}
+        <div className="w-10 md:hidden" />
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
