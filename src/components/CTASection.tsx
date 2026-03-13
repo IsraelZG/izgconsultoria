@@ -1,14 +1,33 @@
+import { useRef } from "react";
 import { MessageCircle } from "lucide-react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const WHATSAPP_URL = "https://wa.me/5500000000000?text=Olá! Gostaria de iniciar um diagnóstico para minha empresa.";
 
 const CTASection = () => {
-  return (
-    <section id="contato" className="relative py-24 sm:py-32">
-      {/* Background accent */}
-      <div className="absolute inset-0 bg-gradient-to-t from-primary/[0.03] to-transparent" />
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
 
-      <div className="relative mx-auto max-w-3xl px-6 text-center">
+  const bgY = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
+
+  return (
+    <section ref={ref} id="contato" className="relative py-24 sm:py-32 overflow-hidden">
+      {/* Parallax Background */}
+      <motion.div className="absolute inset-0 pointer-events-none" style={{ y: bgY }}>
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/[0.03] to-transparent" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full bg-primary/5 blur-[180px]" />
+      </motion.div>
+
+      <motion.div
+        className="relative mx-auto max-w-3xl px-6 text-center"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
         <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl md:text-5xl">
           Pronto para transformar a eficiência da sua{" "}
           <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
@@ -32,7 +51,7 @@ const CTASection = () => {
             Iniciar Diagnóstico via WhatsApp
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
