@@ -1,4 +1,4 @@
-import logoFull from "@/assets/logo-full.svg";
+
 
 const Footer = () => {
   return (
