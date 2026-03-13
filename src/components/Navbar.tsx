@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
-import logoIcon from "@/assets/logo-icon.svg";
-import logoFull from "@/assets/logo-full.svg";
 
 const navLinks = [
   { label: "Soluções", href: "#solucoes" },
