@@ -8,7 +8,7 @@ const navLinks = [
   { label: "Contato", href: "#contato" },
 ];
 
-const WHATSAPP_URL = "https://wa.me/5500000000000?text=Olá! Gostaria de saber mais sobre os serviços da IZG.";
+const WHATSAPP_URL = "https://wa.me/5547988449215?text=Olá! Gostaria de saber mais sobre os serviços da IZG.";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -46,11 +46,7 @@ const Navbar = () => {
         </a>
 
         {/* Mobile Toggle */}
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden text-foreground"
-          aria-label="Menu"
-        >
+        <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden text-foreground" aria-label="Menu">
           {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </div>
