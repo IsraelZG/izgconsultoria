@@ -19,6 +19,8 @@ const HeroSection = () => {
       <div className="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full bg-secondary/5 blur-[120px]" />
 
       <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
+        <img src="/logo-full.svg" alt="IZG Consultoria" className="mx-auto mb-8 h-20 w-auto sm:h-24 md:h-28" />
+
         <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
           Inteligência Tecnológica e Financeira para o seu Negócio{" "}
           <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
