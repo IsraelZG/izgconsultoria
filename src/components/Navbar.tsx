@@ -20,10 +20,8 @@ const Navbar = () => {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
-          <Infinity className="h-8 w-8 text-primary" strokeWidth={2.5} />
-          <span className="font-display text-xl font-bold tracking-wide bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            IZG
-          </span>
+          <img src={logoIcon} alt="IZG" className="h-8 w-auto md:hidden" />
+          <img src={logoFull} alt="IZG Assessoria e Consultoria" className="hidden md:block h-8 w-auto" />
         </a>
 
         {/* Desktop Nav */}
