@@ -1,4 +1,4 @@
-import logoFull from "@/assets/logo-full.svg";
+
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <a href="#" className="inline-flex items-center gap-2">
-              <img src={logoFull} alt="IZG Assessoria e Consultoria" className="h-8 w-auto" />
+              <img src="/logo-full.svg" alt="IZG Assessoria e Consultoria" className="h-8 w-auto" />
             </a>
             <p className="mt-4 max-w-sm text-sm text-muted-foreground">
               Assessoria e Consultoria em tecnologia, finanças e contabilidade estratégica para
