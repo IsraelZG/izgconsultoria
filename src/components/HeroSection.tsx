@@ -51,6 +51,24 @@ const HeroSection = () => {
           </h1>
         </div>
 
+        <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+          <div className="flex items-center gap-3 shrink-0">
+            <img src="/logo-icon.svg" alt="IZG Logo" className="h-24 md:h-32 lg:h-36" />
+            <span className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              IZG
+            </span>
+          </div>
+
+          <div className="hidden md:block w-px h-16 bg-primary/30" />
+
+          <h1 className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl text-center md:text-left">
+            Transformamos seus processos financeiros manuais em{" "}
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              softwares de alta performance.
+            </span>
+          </h1>
+        </div>
+
         <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
           Substituímos planilhas complexas e rotinas operacionais lentas por sistemas sob medida. Desenvolvemos
           tecnologia que entende a regra de negócio da sua empresa, automatiza tarefas e centraliza seus dados com total
