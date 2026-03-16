@@ -1,8 +1,7 @@
 import { useRef } from "react";
 import { MessageCircle } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
-
-const WHATSAPP_URL = "https://wa.me/5500000000000?text=Olá! Gostaria de solicitar um diagnóstico gratuito.";
+import { WHATSAPP_URL } from "@/lib/utils";
 
 const HeroSection = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -60,7 +59,7 @@ const HeroSection = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-primary to-secondary px-8 py-4 text-base font-semibold text-primary-foreground transition-all hover:shadow-glow-gradient hover:scale-[1.02]"
           >
-            <MessageCircle className="h-5 w-5" />
+            <MessageCircle className="h-7 w-7 text-whatsapp" />
             Solicitar Diagnóstico Gratuito
           </a>
         </div>

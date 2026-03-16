@@ -1,8 +1,7 @@
 import { useRef } from "react";
 import { MessageCircle } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
-
-const WHATSAPP_URL = "https://wa.me/5547988449215?text=Olá! Gostaria de iniciar um diagnóstico para minha empresa.";
+import { WHATSAPP_URL } from "@/lib/utils";
 
 const CTASection = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -44,7 +43,7 @@ const CTASection = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-primary to-secondary px-10 py-5 text-lg font-semibold text-primary-foreground transition-all hover:shadow-glow-gradient hover:scale-[1.02]"
           >
-            <MessageCircle className="h-6 w-6" />
+            <MessageCircle className="h-7 w-7 text-whatsapp" />
             Iniciar Diagnóstico via WhatsApp
           </a>
         </div>
