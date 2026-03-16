@@ -39,7 +39,7 @@ const HeroSection = () => {
         </div>
 
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-10">
-          <div className="md:flex-[1] flex justify-center">
+          <div className="md:flex-[2] flex justify-center">
             <img src="/logo-full.svg" alt="IZG Consultoria" className="h-24 w-auto sm:h-28 md:h-36 lg:h-44" />
           </div>
 
