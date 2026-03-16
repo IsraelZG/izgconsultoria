@@ -39,9 +39,9 @@ const HeroSection = () => {
         </div>
 
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
-          <div className="flex flex-col items-center shrink-0">
-            <img src="/logo-icon.svg" alt="IZG Logo" className="h-14 md:h-16" />
-            <span className="mt-1 text-lg font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <div className="flex items-center gap-3 shrink-0">
+            <img src="/logo-icon.svg" alt="IZG Logo" className="h-24 md:h-32 lg:h-36" />
+            <span className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               IZG
             </span>
           </div>
