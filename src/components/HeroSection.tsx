@@ -14,7 +14,6 @@ const HeroSection = () => {
 
   return (
     <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Parallax Background Layer */}
       <motion.div className="absolute inset-0" style={{ y: bgY }}>
         <div
           className="absolute inset-0 opacity-20"
@@ -27,27 +26,29 @@ const HeroSection = () => {
         <div className="absolute bottom-1/4 -right-32 w-[600px] h-[600px] rounded-full bg-secondary/15 blur-[120px]" />
       </motion.div>
 
-      {/* Content with fade-in on mount */}
       <motion.div
-        className="relative z-10 mx-auto max-w-6xl px-6 text-center"
+        className="relative z-10 mx-auto max-w-4xl px-6 text-center"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-14">
-          <img src="/logo-full.svg" alt="IZG Consultoria" className="h-24 w-auto sm:h-28 md:h-36 lg:h-44 shrink-0" />
-
-          <div className="hidden md:block w-1 self-stretch rounded-full bg-gradient-to-b from-primary to-secondary opacity-60" />
-
-          <h1 className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl md:text-left">
-            Inteligência Tecnológica e Financeira para o seu Negócio{" "}
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">escalar.</span>
-          </h1>
+        <div className="mb-6 inline-flex rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5">
+          <span className="text-xs font-medium tracking-wider text-primary uppercase">
+            Consultoria em Tecnologia & Automação Financeira
+          </span>
         </div>
 
+        <h1 className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
+          Transformamos seus processos financeiros manuais em{" "}
+          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            softwares de alta performance.
+          </span>
+        </h1>
+
         <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
-          Unimos desenvolvimento de software sob medida, gestão financeira e contabilidade com um atendimento 100%
-          humano para resolver as dores reais da sua operação.
+          Substituímos planilhas complexas e rotinas operacionais lentas por sistemas sob medida.
+          Desenvolvemos tecnologia que entende a regra de negócio da sua empresa, automatiza tarefas
+          e centraliza seus dados com total segurança.
         </p>
 
         <div className="mt-10">
@@ -58,7 +59,7 @@ const HeroSection = () => {
             className="inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-primary to-secondary px-8 py-4 text-base font-semibold text-primary-foreground transition-all hover:shadow-glow-gradient hover:scale-[1.02]"
           >
             <MessageCircle className="h-7 w-7 text-primary-foreground" />
-            Solicitar Diagnóstico Gratuito
+            Agendar Mapeamento de Processos
           </a>
         </div>
       </motion.div>

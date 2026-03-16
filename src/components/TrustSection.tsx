@@ -13,8 +13,8 @@ const TrustSection = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, ease: "easeOut" }}>
-          
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
           <div className="mb-6 inline-flex rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5">
             <span className="text-xs font-medium tracking-wider text-primary uppercase">
               Confiança & Segurança
@@ -22,42 +22,42 @@ const TrustSection = () => {
           </div>
 
           <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">
-            Metodologia validada em plataformas financeiras de{" "}
-            <span className="text-primary">alta complexidade.</span>
+            Inteligência de negócio aliada à{" "}
+            <span className="text-primary">tecnologia.</span>
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-muted-foreground">
-            Experiência comprovada no desenvolvimento de ecossistemas financeiros e gestão de
-            sociedades com exigência de nível bancário.
+            Não apenas escrevemos código. Nós entendemos profundamente de fluxo de caixa,
+            regras de negócio e rotinas administrativas. Isso garante que o sistema construído
+            fale a mesma língua do seu departamento financeiro.
           </p>
         </motion.div>
 
-        {/* Trust Badges */}
         <div className="mt-16 grid gap-8 sm:grid-cols-2">
           {[
-          {
-            icon: Shield,
-            title: "Sigilo Absoluto",
-            description: "Segurança em nível de cofre para os dados da sua empresa. Protocolos de criptografia e controle de acesso rigorosos.",
-            iconBg: "bg-primary/10",
-            iconColor: "text-primary"
-          },
-          {
-            icon: Lock,
-            title: "Conformidade Total",
-            description: "Todas as soluções são desenvolvidas seguindo as melhores práticas de compliance, LGPD e normas regulatórias do setor financeiro.",
-            iconBg: "bg-secondary/10",
-            iconColor: "text-secondary"
-          }].
-          map((item, index) =>
-          <motion.div
-            key={item.title}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ delay: index * 0.15, duration: 0.6, ease: "easeOut" }}
-            className="flex items-start gap-4 rounded-xl border border-border bg-card/50 backdrop-blur-md p-6">
-            
+            {
+              icon: Shield,
+              title: "Sigilo Absoluto",
+              description: "Segurança em nível de cofre para os dados da sua empresa. Protocolos de criptografia e controle de acesso rigorosos.",
+              iconBg: "bg-primary/10",
+              iconColor: "text-primary",
+            },
+            {
+              icon: Lock,
+              title: "Conformidade Total",
+              description: "Todas as soluções são desenvolvidas seguindo as melhores práticas de compliance, LGPD e normas regulatórias do setor financeiro.",
+              iconBg: "bg-secondary/10",
+              iconColor: "text-secondary",
+            },
+          ].map((item, index) => (
+            <motion.div
+              key={item.title}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ delay: index * 0.15, duration: 0.6, ease: "easeOut" }}
+              className="flex items-start gap-4 rounded-xl border border-border bg-card/50 backdrop-blur-md p-6"
+            >
               <div className={`rounded-lg ${item.iconBg} p-3`}>
                 <item.icon className={`h-6 w-6 ${item.iconColor}`} />
               </div>
@@ -70,29 +70,11 @@ const TrustSection = () => {
                 </p>
               </div>
             </motion.div>
-          )}
+          ))}
         </div>
-
-        {/* Partner logos */}
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default TrustSection;

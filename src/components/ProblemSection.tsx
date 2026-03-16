@@ -1,25 +1,25 @@
-import { Fingerprint, Gauge, Users } from "lucide-react";
+import { FileSpreadsheet, RefreshCw, Eye } from "lucide-react";
 import { motion } from "framer-motion";
 import ParallaxBackground from "./ParallaxBackground";
 
 const problems = [
   {
-    icon: Fingerprint,
-    title: "Personalização Extrema",
+    icon: FileSpreadsheet,
+    title: "Planilhas Frágeis e Complexas",
     description:
-      "Construímos ecossistemas adaptados à realidade exata da sua operação. Sem soluções de prateleira.",
+      "Sua gestão financeira depende de planilhas pesadas, sujeitas a erros humanos e que não escalam com o crescimento da empresa.",
   },
   {
-    icon: Gauge,
-    title: "Alta Performance",
+    icon: RefreshCw,
+    title: "Processos Manuais Repetitivos",
     description:
-      "Softwares ágeis e seguros (nível bancário), desenhados por arquitetos seniores.",
+      "Sua equipe gasta horas copiando e colando dados entre sistemas diferentes para fechar o mês.",
   },
   {
-    icon: Users,
-    title: "Atendimento Humano",
+    icon: Eye,
+    title: "Falta de Visão Centralizada",
     description:
-      "Consultoria de ponta a ponta com especialistas reais. Nada de chatbots genéricos.",
+      "Informações financeiras espalhadas em vários lugares, dificultando a tomada de decisão rápida e precisa.",
   },
 ];
 
@@ -37,8 +37,8 @@ const ProblemSection = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">
-            Sua empresa perde escala quando a tecnologia e as finanças{" "}
-            <span className="text-primary">operam em silos.</span>
+            Onde a sua operação está{" "}
+            <span className="text-primary">perdendo velocidade?</span>
           </h2>
         </motion.div>
 
