@@ -14,7 +14,6 @@ const CTASection = () => {
 
   return (
     <section ref={ref} id="contato" className="relative py-24 sm:py-32 overflow-hidden">
-      {/* Parallax Background */}
       <motion.div className="absolute inset-0 pointer-events-none" style={{ y: bgY }}>
         <div className="absolute inset-0 bg-gradient-to-t from-primary/[0.03] to-transparent" />
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full bg-primary/5 blur-[180px]" />
@@ -28,12 +27,12 @@ const CTASection = () => {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl md:text-5xl">
-          Pronto para transformar a eficiência da sua{" "}
-          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">empresa?</span>
+          Pronto para eliminar processos manuais e ganhar{" "}
+          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">eficiência real?</span>
         </h2>
 
         <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground">
-          Fale diretamente com um especialista e descubra a arquitetura exata para o seu cenário atual.
+          Fale com um dos nossos especialistas e agende um mapeamento dos processos da sua empresa.
         </p>
 
         <div className="mt-10">
@@ -43,8 +42,8 @@ const CTASection = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-primary to-secondary px-10 py-5 text-lg font-semibold text-primary-foreground transition-all hover:shadow-glow-gradient hover:scale-[1.02]"
           >
-            <MessageCircle className="h-7 w-7 text-whatsapp" />
-            Iniciar Diagnóstico via WhatsApp
+            <MessageCircle className="h-7 w-7 text-primary-foreground" />
+            Agendar Diagnóstico
           </a>
         </div>
       </motion.div>

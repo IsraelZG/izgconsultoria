@@ -9,8 +9,8 @@ const Footer = () => {
               <img src="/logo-full.svg" alt="IZG Assessoria e Consultoria" className="h-12 w-auto" />
             </a>
             <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-              Assessoria e Consultoria em tecnologia, finanças e contabilidade estratégica para empresas que querem
-              escalar com segurança.
+              Consultoria em tecnologia especializada em transformar processos financeiros manuais
+              em sistemas web sob medida, seguros e automatizados.
             </p>
           </div>
 
