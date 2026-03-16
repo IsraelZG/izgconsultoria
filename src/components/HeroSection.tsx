@@ -42,7 +42,7 @@ const HeroSection = () => {
           <img src="/logo-full.svg" alt="IZG Consultoria" className="h-24 w-auto sm:h-28 md:h-36 lg:h-44 shrink-0" />
 
           <h1 className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl md:text-left">
-            Transformamos seus processos financeiros manuais em{" "}
+            Transformamos seus processos manuais em{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               softwares de alta performance.
             </span>
