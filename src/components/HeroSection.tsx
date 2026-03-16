@@ -39,9 +39,13 @@ const HeroSection = () => {
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-14">
-          <img src="/logo-full.svg" alt="IZG Consultoria" className="h-24 w-auto sm:h-28 md:h-36 lg:h-44 shrink-0" />
+          <div className="md:w-1/3 flex justify-center shrink-0">
+            <img src="/logo-full.svg" alt="IZG Consultoria" className="h-24 w-auto sm:h-28 md:h-36 lg:h-44" />
+          </div>
 
-          <h1 className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl md:text-left">
+          <div className="hidden md:block w-1 self-stretch rounded-full bg-gradient-to-b from-primary to-secondary opacity-60" />
+
+          <h1 className="md:w-2/3 font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl md:text-left">
             Transformamos seus processos manuais em{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               softwares de alta performance.
