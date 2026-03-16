@@ -34,16 +34,27 @@ const HeroSection = () => {
       >
         <div className="mb-6 inline-flex rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5">
           <span className="text-xs font-medium tracking-wider text-primary uppercase">
-            Consultoria em Tecnologia & Automação Financeira
+            Inteligência Tecnológica e Financeira para o seu Negócio escalar.
           </span>
         </div>
 
-        <h1 className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
-          Transformamos seus processos financeiros manuais em{" "}
-          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            softwares de alta performance.
-          </span>
-        </h1>
+        <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+          <div className="flex flex-col items-center shrink-0">
+            <img src="/logo-icon.svg" alt="IZG Logo" className="h-14 md:h-16" />
+            <span className="mt-1 text-lg font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              IZG
+            </span>
+          </div>
+
+          <div className="hidden md:block w-px h-16 bg-primary/30" />
+
+          <h1 className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl text-center md:text-left">
+            Transformamos seus processos financeiros manuais em{" "}
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              softwares de alta performance.
+            </span>
+          </h1>
+        </div>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
           Substituímos planilhas complexas e rotinas operacionais lentas por sistemas sob medida.
