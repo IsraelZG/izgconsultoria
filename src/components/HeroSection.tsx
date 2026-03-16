@@ -59,7 +59,7 @@ const HeroSection = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-primary to-secondary px-8 py-4 text-base font-semibold text-primary-foreground transition-all hover:shadow-glow-gradient hover:scale-[1.02]"
           >
-            <MessageCircle className="h-7 w-7 text-whatsapp" />
+            <MessageCircle className="h-7 w-7 text-primary-foreground" />
             Solicitar Diagnóstico Gratuito
           </a>
         </div>
