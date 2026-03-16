@@ -41,27 +41,9 @@ const HeroSection = () => {
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-14">
           <img src="/logo-full.svg" alt="IZG Consultoria" className="h-24 w-auto sm:h-28 md:h-36 lg:h-44 shrink-0" />
 
-          <div className="hidden md:block w-1 self-stretch rounded-full bg-gradient-to-b from-primary to-secondary opacity-60" />
-
-          <h1 className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl md:text-left">
-            Transformamos seus processos financeiros manuais em{" "}
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              softwares de alta performance.
-            </span>
-          </h1>
-        </div>
-
-        <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
-          <div className="flex items-center gap-3 shrink-0">
-            <img src="/logo-icon.svg" alt="IZG Logo" className="h-24 md:h-32 lg:h-36" />
-            <span className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              IZG
-            </span>
-          </div>
-
           <div className="hidden md:block w-px h-16 bg-primary/30" />
 
-          <h1 className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl text-center md:text-left">
+          <h1 className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl md:text-left">
             Transformamos seus processos financeiros manuais em{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               softwares de alta performance.
