@@ -41,15 +41,13 @@ const HeroSection = () => {
 
           <h1 className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl md:text-left">
             Inteligência Tecnológica e Financeira para o seu Negócio{" "}
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              escalar.
-            </span>
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">escalar.</span>
           </h1>
         </div>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
-          Unimos desenvolvimento de software sob medida, gestão financeira e contabilidade com um
-          atendimento 100% humano para resolver as dores reais da sua operação.
+          Unimos desenvolvimento de software sob medida, gestão financeira e contabilidade com um atendimento 100%
+          humano para resolver as dores reais da sua operação.
         </p>
 
         <div className="mt-10">
@@ -57,7 +55,7 @@ const HeroSection = () => {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-primary to-secondary px-8 py-4 text-base font-semibold text-primary-foreground transition-all hover:shadow-glow-gradient hover:scale-[1.02]"
+            className="inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-secondary to-primary px-8 py-4 text-base font-semibold text-primary-foreground transition-all hover:shadow-glow-gradient hover:scale-[1.02]"
           >
             <MessageCircle className="h-7 w-7 text-primary-foreground" />
             Solicitar Diagnóstico Gratuito
