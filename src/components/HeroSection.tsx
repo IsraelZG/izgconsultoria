@@ -46,8 +46,9 @@ const HeroSection = () => {
         </div>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
-          Unimos desenvolvimento de software sob medida, gestão financeira e contabilidade com um atendimento 100%
-          humano para resolver as dores reais da sua operação.
+          Substituímos planilhas complexas e rotinas operacionais lentas por sistemas sob medida. Desenvolvemos
+          tecnologia que entende a regra de negócio da sua empresa, automatiza tarefas e centraliza seus dados com total
+          segurança.
         </p>
 
         <div className="mt-10">
