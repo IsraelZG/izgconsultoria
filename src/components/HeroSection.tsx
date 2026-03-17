@@ -32,24 +32,14 @@ const HeroSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <div className="mb-6 inline-flex rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5">
-          <span className="text-xs font-medium tracking-wider text-primary uppercase">
-            Inteligência Tecnológica e Financeira para o seu Negócio escalar.
-          </span>
-        </div>
-
-        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-10">
-          <div className="md:flex-[2] flex justify-center">
-            <img src="/logo-full.svg" alt="IZG Consultoria" className="h-24 w-auto sm:h-28 md:h-36 lg:h-44" />
-          </div>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-14">
+          <img src="/logo-full.svg" alt="IZG Consultoria" className="h-24 w-auto sm:h-28 md:h-36 lg:h-44 shrink-0" />
 
           <div className="hidden md:block w-1 self-stretch rounded-full bg-gradient-to-b from-primary to-secondary opacity-60" />
 
-          <h1 className="md:flex-[2] font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl md:text-left">
-            Transformamos seus processos manuais em{" "}
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              softwares de alta performance.
-            </span>
+          <h1 className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl md:text-left">
+            Inteligência Tecnológica e Financeira para o seu Negócio{" "}
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">escalar.</span>
           </h1>
         </div>
 
