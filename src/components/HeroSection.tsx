@@ -14,7 +14,6 @@ const HeroSection = () => {
 
   return (
     <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Parallax Background Layer */}
       <motion.div className="absolute inset-0" style={{ y: bgY }}>
         <div
           className="absolute inset-0 opacity-20"
@@ -27,7 +26,6 @@ const HeroSection = () => {
         <div className="absolute bottom-1/4 -right-32 w-[600px] h-[600px] rounded-full bg-secondary/15 blur-[120px]" />
       </motion.div>
 
-      {/* Content with fade-in on mount */}
       <motion.div
         className="relative z-10 mx-auto max-w-6xl px-6 text-center"
         initial={{ opacity: 0, y: 30 }}
@@ -59,7 +57,7 @@ const HeroSection = () => {
             className="inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-primary to-secondary px-8 py-4 text-base font-semibold text-primary-foreground transition-all hover:shadow-glow-gradient hover:scale-[1.02]"
           >
             <MessageCircle className="h-7 w-7 text-primary-foreground" />
-            Solicitar Diagnóstico Gratuito
+            Agendar Mapeamento de Processos
           </a>
         </div>
       </motion.div>

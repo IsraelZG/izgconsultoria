@@ -1,43 +1,33 @@
 import { useRef } from "react";
-import { Code, TrendingUp, Calculator, Zap, ArrowRight, type LucideIcon } from "lucide-react";
+import { Monitor, Cog, LayoutDashboard, ArrowRight, type LucideIcon } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { WHATSAPP_URL } from "@/lib/utils";
 
 interface Solution {
   icon: LucideIcon;
   title: string;
   description: string;
   tags?: string[];
-  link?: string;
 }
 
 const solutions: Solution[] = [
   {
-    icon: Code,
-    title: "Software Customizado",
-    description: "Sistemas de gestão, Superapps e plataformas descentralizadas sob medida para a sua operação.",
-    tags: ["Sistemas Web", "Arquitetura P2P", "Dashboards"],
-    link: "#contato",
+    icon: Monitor,
+    title: "Digitalização de Planilhas e Processos",
+    description: "Mapeamos suas planilhas de alta complexidade e as transformamos em aplicações web seguras, com níveis de acesso e auditoria de dados.",
+    tags: ["Migração de Dados", "Controle de Acesso", "Auditoria"],
   },
   {
-    icon: TrendingUp,
-    title: "Gestão Financeira & Crédito",
-    description: "Estruturação de caixa, captação de recursos e soluções inteligentes de crédito.",
-    tags: ["Capital de Giro", "Crédito com Garantia", "Antecipação"],
-    link: "#contato",
+    icon: Cog,
+    title: "Automação de Rotinas Financeiras",
+    description: "Desenvolvemos robôs e rotinas de sistema que executam cálculos e consolidações de forma automática, eliminando o erro humano.",
+    tags: ["Cálculos Automatizados", "Consolidação", "Integração"],
   },
   {
-    icon: Calculator,
-    title: "Contabilidade Estratégica",
-    description: "Foco em prestadores de serviço, redução tributária e conformidade fiscal completa.",
-    tags: ["Planejamento Tributário", "BPO Financeiro", "Abertura de Empresa"],
-    link: "#contato",
-  },
-  {
-    icon: Zap,
-    title: "Energia Inteligente",
-    description: "Redução de custos operacionais com energia solar e infraestrutura para mobilidade.",
-    tags: ["Projetos Solares", "Carregadores EV", "Mercado Livre"],
-    link: "#contato",
+    icon: LayoutDashboard,
+    title: "Sistemas de Gestão Customizados",
+    description: "Criamos plataformas com a exata medida da sua necessidade. Sem os excessos de softwares genéricos de mercado, focando 100% no que sua operação realmente utiliza.",
+    tags: ["Sob Medida", "Dashboard", "Relatórios"],
   },
 ];
 
@@ -52,7 +42,6 @@ const SolutionsHub = () => {
 
   return (
     <section ref={ref} id="solucoes" className="relative py-24 sm:py-32 overflow-hidden">
-      {/* Parallax Background */}
       <div className="absolute inset-0 bg-[#0B1120]" />
       <motion.div className="absolute inset-0 pointer-events-none" style={{ y: bgY }}>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/[0.08] to-transparent" />
@@ -69,17 +58,17 @@ const SolutionsHub = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <h2 className="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Um ecossistema completo para a{" "}
+            Soluções sob medida para o seu{" "}
             <span className="bg-gradient-to-r from-[#00E5FF] to-[#8B5CF6] bg-clip-text text-transparent">
-              eficiência do seu negócio.
+              ecossistema financeiro.
             </span>
           </h2>
           <p className="mt-4 text-lg text-[#94A3B8]">
-            Soluções modulares que se adaptam à realidade da sua empresa, da arquitetura de software ao fluxo de caixa.
+            Da digitalização de planilhas à automação completa de rotinas, entregamos tecnologia que fala a língua do seu departamento financeiro.
           </p>
         </motion.div>
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {solutions.map((solution, index) => (
             <motion.div
               key={solution.title}
@@ -116,10 +105,12 @@ const SolutionsHub = () => {
 
               <div className="mt-8 pt-6 border-t border-white/5">
                 <a
-                  href={solution.link || "#"}
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-sm font-medium text-[#00E5FF] transition-colors hover:text-[#8B5CF6]"
                 >
-                  Conhecer solução
+                  Solicitar Mapeamento
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </a>
               </div>
