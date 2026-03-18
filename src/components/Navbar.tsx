@@ -38,7 +38,7 @@ const Navbar = () => {
           className="hidden md:inline-flex items-center gap-2 rounded-lg border border-primary/50 px-5 py-2.5 text-sm font-medium text-primary transition-all hover:shadow-glow-cyan hover:border-primary"
         >
           <MessageCircle className="h-5 w-5 text-whatsapp" />
-          Falar com Especialista
+          Agendar Diagnóstico
         </a>
 
         <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden text-foreground" aria-label="Menu">
@@ -66,7 +66,7 @@ const Navbar = () => {
               className="inline-flex items-center justify-center gap-2 rounded-lg border border-primary/50 px-5 py-2.5 text-sm font-medium text-primary transition-all hover:shadow-glow-cyan"
             >
               <MessageCircle className="h-5 w-5 text-whatsapp" />
-              Falar com Especialista
+              Agendar Diagnóstico
             </a>
           </nav>
         </div>

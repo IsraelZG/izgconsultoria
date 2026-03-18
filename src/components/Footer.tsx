@@ -3,18 +3,16 @@ const Footer = () => {
     <footer className="border-t border-border bg-card/30 backdrop-blur-md">
       <div className="mx-auto max-w-7xl px-6 py-12">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          {/* Brand */}
           <div className="lg:col-span-2">
             <a href="#" className="inline-flex items-center gap-2">
               <img src="/logo-full.svg" alt="IZG Assessoria e Consultoria" className="h-12 w-auto" />
             </a>
             <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-              Assessoria e Consultoria em tecnologia, finanças e contabilidade estratégica para empresas que querem
-              escalar com segurança.
+              Consultoria de tecnologia especializada em transformar processos financeiros manuais e planilhas complexas
+              em sistemas web sob medida, seguros e automatizados.
             </p>
           </div>
 
-          {/* Links */}
           <div>
             <h4 className="font-display text-sm font-semibold text-foreground uppercase tracking-wider">Links</h4>
             <ul className="mt-4 space-y-3">
@@ -33,7 +31,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
             <h4 className="font-display text-sm font-semibold text-foreground uppercase tracking-wider">Contato</h4>
             <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
