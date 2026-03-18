@@ -5,4 +5,4 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export const WHATSAPP_URL = "https://wa.me/5547988449215?text=Olá! Gostaria de saber mais sobre os serviços da IZG.";
+export const WHATSAPP_URL = "https://wa.me/5547999316123?text=Olá! Gostaria de saber mais sobre os serviços da IZG.";
