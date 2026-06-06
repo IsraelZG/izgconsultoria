@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import InadimplenciaCalculator from "@/components/InadimplenciaCalculator";
+import ContrastSection from "@/components/ContrastSection";
 import { WHATSAPP_URL } from "@/lib/utils";
 
 const ReceitaGarantidaHero = () => {
@@ -68,6 +69,7 @@ const ReceitaGarantida = () => {
       <Navbar />
       <ReceitaGarantidaHero />
       <InadimplenciaCalculator />
+      <ContrastSection />
       <Footer />
     </div>
   );
