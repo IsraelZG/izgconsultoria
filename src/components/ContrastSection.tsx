@@ -36,11 +36,10 @@ const ContrastSection = () => {
         <div className="grid md:grid-cols-2 gap-6">
           {/* Sem a IZG */}
           <motion.div
-            custom={0}
-            variants={cardVariants}
-            initial="hidden"
-            whileInView="visible"
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
             className="rounded-2xl border border-white/[0.08] bg-[#1E293B]/30 backdrop-blur-sm p-8"
           >
             <div className="flex items-center gap-3 mb-6">
