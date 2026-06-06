@@ -1,76 +1,56 @@
-import { useRef } from "react";
-import { MessageCircle } from "lucide-react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { Printer } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import InadimplenciaCalculator from "@/components/InadimplenciaCalculator";
-import ContrastSection from "@/components/ContrastSection";
-import { WHATSAPP_URL } from "@/lib/utils";
-
-const ReceitaGarantidaHero = () => {
-  const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
-  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-
-  return (
-    <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      <motion.div className="absolute inset-0" style={{ y: bgY }}>
-        <div
-          className="absolute inset-0 opacity-20"
-          style={{
-            backgroundImage: "radial-gradient(circle, hsl(var(--primary) / 0.3) 1px, transparent 1px)",
-            backgroundSize: "32px 32px",
-          }}
-        />
-        <div className="absolute top-1/4 -left-32 w-[600px] h-[600px] rounded-full bg-primary/15 blur-[120px]" />
-        <div className="absolute bottom-1/4 -right-32 w-[600px] h-[600px] rounded-full bg-secondary/15 blur-[120px]" />
-      </motion.div>
-
-      <motion.div
-        className="relative z-10 mx-auto max-w-4xl px-6 text-center"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
-        <span className="inline-block rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
-          Receita Garantida
-        </span>
-
-        <h1 className="mt-6 font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl">
-          Elimine o impacto da inadimplência no seu fluxo de caixa.
-        </h1>
-
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
-          Previsibilidade total: você recebe o repasse garantido todo mês, sem depender de quem pagou nem de ações de cobrança que se arrastam por anos.
-        </p>
-
-        <div className="mt-10">
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-primary to-secondary px-8 py-4 text-base font-semibold text-primary-foreground transition-all hover:shadow-glow-gradient hover:scale-[1.02]"
-          >
-            <MessageCircle className="h-6 w-6 text-primary-foreground" />
-            Quero garantir minha receita
-          </a>
-        </div>
-      </motion.div>
-    </section>
-  );
-};
+import RevenueBrochure from "@/components/brochure/RevenueBrochure";
 
 const ReceitaGarantida = () => {
+  const exportPdf = () => window.print();
+
   return (
-    <div className="min-h-screen bg-background">
-      <Navbar />
-      <ReceitaGarantidaHero />
-      <InadimplenciaCalculator />
-      <ContrastSection />
-      <Footer />
+    <div className="min-h-screen bg-background print:bg-white">
+      {/* Navegação — só na tela */}
+      <div className="no-print">
+        <Navbar />
+      </div>
+
+      {/* Intro + calculadora — só na tela (não entram no PDF) */}
+      <section className="no-print px-6 pt-28 pb-4 text-center">
+        <h1 className="font-display text-3xl font-bold text-foreground sm:text-4xl">
+          Receita Garantida
+        </h1>
+        <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
+          Confira a apresentação completa abaixo — e exporte em PDF (A4) para enviar ou imprimir.
+        </p>
+        <button
+          onClick={exportPdf}
+          className="mt-6 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-primary to-secondary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:scale-[1.02]"
+        >
+          <Printer className="h-4 w-4" />
+          Exportar PDF (A4)
+        </button>
+      </section>
+
+      <div className="no-print">
+        <InadimplenciaCalculator />
+      </div>
+
+      {/* Apresentação imprimível (A4) */}
+      <RevenueBrochure />
+
+      {/* Botão flutuante — só na tela */}
+      <button
+        onClick={exportPdf}
+        className="no-print fixed bottom-6 right-6 z-50 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary to-secondary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-glow-gradient"
+        aria-label="Exportar apresentação em PDF"
+      >
+        <Printer className="h-4 w-4" />
+        Exportar PDF
+      </button>
+
+      <div className="no-print">
+        <Footer />
+      </div>
     </div>
   );
 };
