@@ -38,15 +38,12 @@ const HeroSection = () => {
           <div className="hidden md:block w-1 self-stretch rounded-full bg-gradient-to-b from-primary to-secondary opacity-60" />
 
           <h1 className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl md:text-left">
-            Inteligência Tecnológica e Financeira para o seu Negócio{" "}
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">escalar.</span>
+            A gestão financeira do seu negócio, de ponta a ponta.
           </h1>
         </div>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
-          Substituímos planilhas complexas e rotinas operacionais lentas por sistemas sob medida. Desenvolvemos
-          tecnologia que entende a regra de negócio da sua empresa, automatiza tarefas e centraliza seus dados com total
-          segurança.
+          Unimos tecnologia sob medida, gestão operacional e soluções de crédito para você organizar o caixa, automatizar rotinas e crescer com liquidez.
         </p>
 
         <div className="mt-10">
@@ -57,7 +54,7 @@ const HeroSection = () => {
             className="inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-primary to-secondary px-8 py-4 text-base font-semibold text-primary-foreground transition-all hover:shadow-glow-gradient hover:scale-[1.02]"
           >
             <MessageCircle className="h-7 w-7 text-primary-foreground" />
-            Agendar Mapeamento de Processos
+            Falar com um especialista financeiro
           </a>
         </div>
       </motion.div>
