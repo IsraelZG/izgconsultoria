@@ -3,6 +3,7 @@ import { MessageCircle } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import InadimplenciaCalculator from "@/components/InadimplenciaCalculator";
 import { WHATSAPP_URL } from "@/lib/utils";
 
 const ReceitaGarantidaHero = () => {
@@ -66,6 +67,7 @@ const ReceitaGarantida = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <ReceitaGarantidaHero />
+      <InadimplenciaCalculator />
       <Footer />
     </div>
   );
