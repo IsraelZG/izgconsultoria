@@ -69,6 +69,7 @@ const ReceitaGarantida = () => {
       <Navbar />
       <ReceitaGarantidaHero />
       <InadimplenciaCalculator />
+      <ContrastSection />
       <Footer />
     </div>
   );
