@@ -43,9 +43,7 @@ const HeroSection = () => {
         </div>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
-          Substituímos planilhas complexas e rotinas operacionais lentas por sistemas sob medida. Desenvolvemos
-          tecnologia que entende a regra de negócio da sua empresa, automatiza tarefas e centraliza seus dados com total
-          segurança.
+          Unimos tecnologia sob medida, gestão operacional e soluções de crédito para você organizar o caixa, automatizar rotinas e crescer com liquidez.
         </p>
 
         <div className="mt-10">
