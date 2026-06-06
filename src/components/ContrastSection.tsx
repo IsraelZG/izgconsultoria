@@ -62,11 +62,10 @@ const ContrastSection = () => {
 
           {/* Com a IZG */}
           <motion.div
-            custom={1}
-            variants={cardVariants}
-            initial="hidden"
-            whileInView="visible"
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ delay: 0.15, duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
             className="rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 to-secondary/10 backdrop-blur-sm p-8"
           >
             <div className="flex items-center gap-3 mb-6">
