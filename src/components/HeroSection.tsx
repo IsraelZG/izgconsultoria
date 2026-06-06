@@ -38,8 +38,7 @@ const HeroSection = () => {
           <div className="hidden md:block w-1 self-stretch rounded-full bg-gradient-to-b from-primary to-secondary opacity-60" />
 
           <h1 className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl md:text-left">
-            Inteligência Tecnológica e Financeira para o seu Negócio{" "}
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">escalar.</span>
+            A gestão financeira do seu negócio, de ponta a ponta.
           </h1>
         </div>
 
